@@ -19,10 +19,10 @@ module.exports = {
     "!**/node_modules/**"
   ],
   moduleFileExtensions: [...defaults.moduleFileExtensions, 'ts', 'tsx'],
-  transform: {
-    "^.+\\.(ts|tsx)$": "ts-jest"
+  moduleNameMapper: {
+    "\\.css$": "identity-obj-proxy"
   },
-  testEnvironment: "node",
+  testEnvironment: "jsdom",
   testMatch: [
     "**/__tests__/**/*.+(ts|tsx|js)",
     "**/?(*.)+(spec|test).+(ts|tsx|js)"

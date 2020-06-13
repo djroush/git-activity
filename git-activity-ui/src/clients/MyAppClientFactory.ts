@@ -1,7 +1,7 @@
 import * as MyApp from './MyAppClient';
 import MyAppClientMock from './MyAppClientMock';
 import MyAppClientImpl from './MyAppClientImpl';
-import CONFIG from '../index';
+import CONFIG from '../Config';
 
 class MyAppClientFactory {
   static MyAppClient: MyApp.Client = null; 

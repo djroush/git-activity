@@ -1,5 +1,5 @@
 import * as MyApp from './MyAppClient';
-import CONFIG from '../index';
+import CONFIG from '../Config';
 
 import $ from 'jquery'
 
