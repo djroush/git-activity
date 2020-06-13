@@ -1,0 +1,28 @@
+.activity {
+  position: relative;
+  display: inline-block;
+  padding: 0.5% 0%;
+  border-bottom: 2px solid #999999;
+}
+
+.activity span,div {
+  vertical-align: middle;
+}
+
+.activity div {
+  display: inline-block;
+  padding: 1%;
+}
+
+.activity .avatar {
+  width: 5%;
+  height: 5%;
+  padding: 0%;
+}
+
+.activity .avatar img {
+  max-height: 100%;
+  max-width: 100%;
+  position: relative;
+  float: left;
+}

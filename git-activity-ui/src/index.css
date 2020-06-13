@@ -1,0 +1,63 @@
+/* Opinionated CSS defaults based on:
+  ! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css 
+*/
+
+body {
+	width: calc(100vw - 16px);
+	height: calc(100vh - 16px);
+	background-color: #202020;
+	color: #EFEFF1;
+	margin: 8px;
+}
+
+div {
+	display: block;
+	text-align:center;
+}
+
+p, button, span {
+	display: inline-block;
+	color: #EFEFF1;
+	height: 36px;
+	vertical-align:middle;
+}
+
+input {
+	display: inline-block;
+	color: #EFEFF1;
+	height: 34px;
+	vertical-align:middle;
+}
+
+button {
+    background-color: #A970FF;
+    outline:none;
+    border-radius: 0px 6px 6px 0px;
+    padding: 0 .5rem
+}
+
+ul, li {
+	list-style-type: none;
+	list-style-image: none;
+}
+
+ul {
+	vertical-align: middle;
+	line-height: 24px;
+	margin: 0px;
+	list-style-position: outside;
+}
+li {
+	display: inline-block;
+	list-style-position: inside;
+	margin: 3px;
+}
+a:hover, button:hover {
+    cursor: pointer;
+    background-color: #772CE8;
+    color: #FFFFFF;
+}
+
+button::-moz-focus-inner {
+   border: 0;
+}
