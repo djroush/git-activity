@@ -14,13 +14,18 @@ class App extends React.Component<unknown, AppState> {
 
   searchBar: SearchBar = null;
 
+  constructor(props: unknown) {
+    super(props);
+    this.loadActivities = this.loadActivities.bind(this);
+  }
+ 
   loadActivities = (repoOwner: string, repoName: string, eventType: string): void => {
     this.repoActivity.loadActivities(repoOwner, repoName, eventType);
   };
 
   render(): JSX.Element {
     // TODO: find another place to bind these!
-    const loadActivities = this.loadActivities.bind(this);
+    const loadActivities = this.loadActivities;
 
     return (
       <div className="App">

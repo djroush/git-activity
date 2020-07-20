@@ -4,12 +4,10 @@ import MyAppClientImpl from './MyAppClientImpl';
 import MyAppClientMock from './MyAppClientMock';
 import * as MyApp from './MyAppClient';
 
-const MyAppClientImpl1 = jest.mock('./MyAppClientImpl')
-const MyAppClientMock1 = jest.mock('./MyAppClientMock')
+jest.mock('./MyAppClientImpl')
+jest.mock('./MyAppClientMock')
 
 beforeEach(() => {
-  MyAppClientImpl1.clearAllMocks;
-  MyAppClientMock1.clearAllMocks;
   MyAppClientFactory.MyAppClient === null;
 });
 

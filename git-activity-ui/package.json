@@ -60,5 +60,8 @@
   },
   "resolutions": {
     "uglify-js": ">=2.6.0"
+  },
+  "resolutions": {
+    "lodash": "^4.17.19"
   }
 }

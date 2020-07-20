@@ -1,6 +1,5 @@
 import * as MyApp from './MyAppClient';
 
-
 class MyAppClientMock implements MyApp.Client {
   public getActivity(_owner: string, _repo: string, _eventType: String, 
     callback: (response: MyApp.Activity[]) => void): void {
